@@ -44,3 +44,92 @@
     transform: rotate(360deg);
   }
 }
+
+.App-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.attributes-container, .classes-container, .skills-container {
+  border: 2px solid #444;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+.attributes-container h2, .classes-container h2, .skills-container h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.attribute-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #777;
+}
+
+.class-item {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 4px;
+}
+
+.met {
+  background-color: lightgreen;
+  border: 1px solid green;
+}
+
+.not-met {
+  background-color: lightcoral;
+  border: 1px solid red;
+}
+
+.classes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.class-item {
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.class-item.met {
+  background-color: lightgreen;
+}
+
+.class-item.not-met {
+  background-color: lightcoral;
+}
+
+.class-requirements {
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #222;
+  color: #fff;
+}
